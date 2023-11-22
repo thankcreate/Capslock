@@ -2732,33 +2732,10 @@
           ]
         },
         {
-          "description": "n = delete a word ahead",
+          "description": "n = delete a char ahead",
           "type": "basic",
           "from": {
             "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "delete_or_backspace",
-              "modifiers": [
-                "left_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "m = delete a char ahead",
-          "type": "basic",
-          "from": {
-            "key_code": "m",
             "modifiers": {
               "mandatory": [
                 "right_command",
@@ -2775,10 +2752,10 @@
           ]
         },
         {
-          "description": ", = delete a char after",
+          "description": "m = delete a char after",
           "type": "basic",
           "from": {
-            "key_code": "comma",
+            "key_code": "m",
             "modifiers": {
               "mandatory": [
                 "right_command",
@@ -2795,7 +2772,31 @@
           ]
         },
         {
-          "description": ". = delete a word after",
+          "description": ", = prev tab",
+          "type": "basic",
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_shift",
+                "left_command"
+              ]
+            }
+          ]
+        },
+        {
+          "description": ". = next tab",
           "type": "basic",
           "from": {
             "key_code": "period",
@@ -2810,9 +2811,10 @@
           },
           "to": [
             {
-              "key_code": "delete_forward",
+              "key_code": "close_bracket",
               "modifiers": [
-                "left_option"
+                "left_shift",
+                "left_command"
               ]
             }
           ]
