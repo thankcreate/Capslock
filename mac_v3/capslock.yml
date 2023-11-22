@@ -719,15 +719,15 @@ rules:
         to: [ { key_code: delete_or_backspace, modifiers: [ left_command ] } ]
 
       # + command = delete line
-      - description: 'command + n = delete whole line'
+      - description: 'command + n = delete word before'
         type: basic
         from: { key_code: n, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: delete_or_backspace } ]
+        to: [ { key_code: delete_or_backspace, modifiers: [ left_option ] } ]
 
-      - description: 'command + m = delete word ahead'
+      - description: 'command + m = delete word after'
         type: basic
         from: { key_code: m, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: delete_forward } ]
+        to: [ { key_code: delete_forward, modifiers: [ left_option ] } ]
 
       - description: 'command + , = delete word after'
         type: basic
