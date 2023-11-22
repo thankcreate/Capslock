@@ -2644,13 +2644,6 @@
           },
           "to": [
             {
-              "key_code": "left_arrow",
-              "modifiers": [
-                "left_shift",
-                "left_command"
-              ]
-            },
-            {
               "key_code": "delete_or_backspace"
             }
           ]
@@ -2672,10 +2665,7 @@
           },
           "to": [
             {
-              "key_code": "delete_or_backspace",
-              "modifiers": [
-                "left_option"
-              ]
+              "key_code": "delete_forward"
             }
           ]
         },
@@ -2696,9 +2686,10 @@
           },
           "to": [
             {
-              "key_code": "delete_forward",
+              "key_code": "open_bracket",
               "modifiers": [
-                "left_option"
+                "left_shift",
+                "left_command"
               ]
             }
           ]
@@ -2720,14 +2711,11 @@
           },
           "to": [
             {
-              "key_code": "right_arrow",
+              "key_code": "close_bracket",
               "modifiers": [
                 "left_shift",
                 "left_command"
               ]
-            },
-            {
-              "key_code": "delete_or_backspace"
             }
           ]
         },
