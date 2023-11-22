@@ -1421,7 +1421,10 @@
           },
           "to": [
             {
-              "key_code": "home"
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ]
         },
@@ -1632,7 +1635,10 @@
           },
           "to": [
             {
-              "key_code": "end"
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ]
         },
